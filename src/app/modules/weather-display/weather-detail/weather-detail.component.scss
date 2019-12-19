@@ -1,0 +1,45 @@
+.card {
+    min-width: 200px;
+    min-height: 340px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 20px;
+}
+
+.card-body {
+    background: black;
+}
+.card-title {
+    padding-left: 20px;
+    color: white;
+
+}
+.card-img {
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100px;
+    color: khaki;
+    padding-top: 5px;
+}
+
+.headers {
+    font-weight: bolder;
+    color: white;
+    padding-left: 20px;
+}

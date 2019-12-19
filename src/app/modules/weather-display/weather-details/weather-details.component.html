@@ -1,0 +1,34 @@
+<div *ngIf="((weatherDetails$ |async) === null || (weatherDetails$ |async) === undefined) ||((errorDetails$|async)!== null ); else showData">
+    <div class="no-result">
+            <div *ngIf="getClickIndicator() === 0">
+                <span>Please Search Weather Of Your Favourite City</span>
+            </div>
+            <ng-container *ngIf="(errorDetails$|async) !== null">
+                <div [ngSwitch]="(errorDetails$|async).status">
+                        <ng-container *ngSwitchCase="'400'">
+                                <span class="error">No City Provided. Please enter a City Name and Search</span>
+                        </ng-container>
+                        <ng-container *ngSwitchCase="'404'">
+                                <span class="error">The City Name is Incorrect! &#10; Please enter a valid City Name and Search </span>
+                        </ng-container>
+                        <ng-container *ngSwitchDefault>
+                                <span class="error">Error!</span>
+                        </ng-container>
+                </div>
+
+            </ng-container>
+    </div>
+</div>
+
+<ng-template #showData>
+    <ul class="nav nav-tabs">
+        <ng-container *ngFor="let item of (weatherDetails$ |async).list; let i = index">
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{'selected': i === (selectedIndex$| async)}"
+                   routerLinkActive="router-link-active"
+                   (click)='onNavClick(i)'>{{item.date | date: 'dMMM'}}</a> 
+              </li>
+        </ng-container>
+      </ul>
+      <app-weather-detail ></app-weather-detail>
+</ng-template>

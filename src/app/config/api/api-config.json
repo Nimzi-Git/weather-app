@@ -1,0 +1,11 @@
+
+{
+    "data": {
+        "serviceEndPoints" : {
+            "apiId": "2e7e1d8fabd7c153330e11d1f13782d9",
+            "apiURL": "https://api.openweathermap.org/data/2.5/forecast/daily?q=",
+            "count": "5"
+        }
+
+ }
+}

@@ -1,0 +1,31 @@
+.jumbotron {
+    text-align: center;
+    background-image: url('../../../../assets/weather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 350px;
+    .display-3 {
+        color: lightyellow;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .lead {
+        color: lime;
+    }
+}
+
+
+.jumbotron-fluid {
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.list-group {
+    width: 1010px;
+    margin-left: 100px;
+    text-align: left;
+}

@@ -1,0 +1,30 @@
+.nav-tabs {
+        margin-left: 30px;
+        width: 50%;
+}
+.nav-link:hover{
+        cursor: pointer;
+        background: gray;
+    
+}
+.selected {
+        background: darkolivegreen;
+        color: white;
+}
+
+.no-result {
+        width: 100vw;
+        height: 390px;
+        background:gainsboro;
+        align-content: center;
+        text-align: center;
+        margin: auto 0;
+        color: green;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        padding-top: 20px;
+}
+
+.error {
+        color: red;
+}

@@ -1,0 +1,27 @@
+<div class="card col-7 col-xs-10 col-sm-6">
+        <h3 class="card-header ">{{(weatherDetails$ | async).city}} Weather 
+                                For {{(weatherDetails$ | async).list[(clickedIndex | async)].date | date:'dMMM'}}
+                                <img class="card-img" src="https://openweathermap.org/img/w/{{(weatherDetails$ | async).list[clickedIndex|async].icon}}.png" alt="Weather Image">
+        </h3>
+        
+        <div class="card-body ">
+          <h4 class="card-title">Details</h4>
+          <div class="container">
+            <div class="details">
+              <div>
+                  <span class="headers">Maximum Temp: </span>{{(weatherDetails$ | async).list[clickedIndex | async].temp.max}} &#8451;
+              </div>
+              <div>
+                  <span class="headers">Minimum Temp: </span>{{(weatherDetails$ | async).list[clickedIndex | async].temp.min}} &#8451;
+              </div>
+              <div>
+                  <span class="headers">Wind: </span>{{(weatherDetails$ | async).list[clickedIndex | async].wind_speed}} mph
+              </div>
+              <div>
+                <span class="headers">Description: </span>{{(weatherDetails$ | async).list[clickedIndex | async].description}}
+              </div>
+            </div>
+          </div>
+
+        </div>
+</div>
