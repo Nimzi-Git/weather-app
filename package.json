@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "coverage": "ng test --code-coverage"
+    "coverage": "ng test --code-coverage",
+    "preinstall": "npx npm-force-resolutions"
   },
   "test": {
     "options": {
@@ -27,6 +28,7 @@
     "@angular/router": "~8.2.13",
     "bootstrap": "^4.4.1",
     "rxjs": "~6.4.0",
+    "serialize-javascript": "^2.1.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
@@ -50,5 +52,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "resolutions": {
+    "serialize-javascript": "^2.1.1"
   }
 }
