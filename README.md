@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 This Application displays 5 days weathers to the user. Application loads with the home landing page with a Search field and a Search button. User needs to provide a valid City Name(ex: 'London') and click On Search. It will load 5 days weather in the bottom half of the application. Five Tabs(each with the Date) will be visible to display that particular day's weather.
 
-The application displays an error for any adverse search. For an example- if the user pressed the Search button without entering a city name, it will display the user an error message informing that there is no city name has been entered. Also, if the user enters a incorrect city, the application will show a valid error message informing that the city is not correct.
+The application displays a message for any adverse search. For an example- if the user pressed the Search button without entering a city name, it will display the user a message informing that there is no city name has been entered. Also, if the user enters a incorrect city, the application will show a message informing that the city is not correct.
 
 ## Development server
 
